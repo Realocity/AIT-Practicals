@@ -1,0 +1,25 @@
+<!-- Q.4 Using <svg> element of HTML5 draw a circle. Colour it in user selected colour. -->
+  <html>
+<head>
+  <title></title>
+  <script>
+    function changeFill() {
+      document.getElementById("cir").style.fill =
+      document.getElementById("chooseColors").value;
+    }
+  </script>
+</head>
+<body>
+  <svg height="200" width="200"> 
+    <circle cx="100" cy="100" r="90" stroke="black" stroke-width="1" fill="black" id="cir" />
+  </svg>
+  <br /> <br />
+  <select id="chooseColors">
+    <option value="Green">Green</option>
+    <option value="Red">Red</option>
+    <option value="Blue">Blue</option>
+    <option value="Orange">Orange</option>
+    <option value="Yellow">Yellow</option>
+  </select>
+  <input type="button" value="Change Colors" onclick="changeFill()" />
+  </body></html>
