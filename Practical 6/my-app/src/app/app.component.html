@@ -1,0 +1,22 @@
+<!--Name : Shubham Sapkal
+Roll No. : 2012118
+In Angular create a project Inventory. 
+In this project create a component Item having property 'description'. 
+Using one way data binding display the value set in description property on the application page.-->
+
+<br>
+<h2>1. Interpolation Binding</h2>
+<span><h1>{{title}}</h1></span>
+<br>
+
+<div class="well"><br>
+  <h2>2. Property Binding</h2>
+  <input name="name" [value]="title">
+</div>
+<br>
+
+<div class="well">
+  <div class="col-md-4"><h2>3. Event Binding</h2> <input name="name" [value]="time"> </div>
+  <div class="col-md-4"></div><br>
+  <button class="btn btn-success" (click)="getTime()"> Get Time </button>
+</div>
